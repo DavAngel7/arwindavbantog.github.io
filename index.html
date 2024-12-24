@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+      <!--added line for sending links-->
+      
+      <!--meta tags in sending links-->
+      <meta property="og:title" content="BG Partylist">
+      <meta property="og:image" content="https://www.bgpartylist.com/images/BG PARTYLIST 2X3 V4.png">
+      <meta property="og:description" content="Advocacy: Ang Bisaya Gyud (BG) Partylist ay nagsusulong ng mga karapatan at kapakanan ng mga sektor na napabayaan, lalo na ang mga Bisaya, katutubo, at mga mahihirap. Kami ay nakatuon sa paglaban para sa katarungan, kapayapaan, at upang itatag ang isang malinis na pamahalaan na tunay na naglilingkod sa mga tao. Ang aming boses sa Kongreso ay dedikado sa pagpapalakas ng bawat Pilipino, pag-aangat ng ating mga komunidad, at pagtitiyak na ang mga susunod na henerasyon ay makikinabang sa isang makatarungan, mapayapa at maunlad na lipunan. Kami ay naniniwala na ang bawat Pilipino ay may karapatang magkaroon ng mas maginhawa at masayang buhay, at ito ang aming magiging pangunahing layunin sa pagsisilbi.">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://www.bgpartylist.com/">
+      <meta property="og:image:width" content="627">
+      <meta property="og:image:height" content="1200">
+      <!--end added line for sending links-->
+
+
+
+
+
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>BGPartylist</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/favicon.ico" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      
+      <!-- header section start -->
+      <div class="header_section"> 
+         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <a class="navbar-brand"><a href="index.html" title="BG Partylist"><img class="toplogo" src="images/toplogo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  
+                  
+
+
+<!-- FORWARD Slash was used in the hyperlink reference in the navigation bar -->
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="campaignmaterial.html">Campaign Material
+                     </a>
+                  </li>
+               
+ <!--   End FORWARD Slash was used in the hyperlink reference in the navigation bar  --> 
+             
+            <!-- NOTE: In the VS CODE - the campaignmaterial.html is the href of the DOWNLOAD button, 
+                       In the uploaded website: only "campaign" was used as the href of the download button.-->
+
+
+
+
+
+
+               </ul>
+            
+
+               
+ <!--The class attribute of LOGIN button changed to the same attribute value of the uploaded website-->
+                              <div class="d-inline-flex mt-5 pt-2">
+                                 <a href="/user/login" class="btn btn-danger" >LOGIN</a>
+                              </div>
+<!--end The class attribute of LOGIN button changed to the same attribute value of the uploaded website-->
+               
+
+
+            </div>
+         </nav>
+      </div>
+
+      <!-- header section end -->
+      <!-- banner section start -->
+
+
+
+
+
+
+<!--added update popup video at landing page 02/12/2024-->
+      <div class="popup">
+        <video id="landingvideo" src="videos/landing page video.mp4" muted="true" autoplay="true"></video>
+        <img onclick="show();" src="images/close.png" id="close" class="close" alt="">
+        <button class="unmute" type="submit" id="muteButton">Unmute!</button>
+      </div>
+
+      <script>
+       const video = document.getElementById('landingvideo')
+       document.getElementById('muteButton').addEventListener('click',function(){
+         if(video.muted == true){
+            video.muted = false;
+            document.getElementById('muteButton').textContent="mute";
+            video.currentTime = 0;
+         }
+         else{
+            video.muted = true;
+            document.getElementById('muteButton').textContent="unmute!";
+         }     
+         //video.muted == true?video.muted = false:video.muted = true;
+       })
+
+       function show(){
+         var popup = document.querySelector(".popup");
+         popup.classList.toggle("active");
+         video.muted = true;
+       }
+
+      </script>
+<!--end added update popup video at landing page 02/12/2024-->
+
+
+
+
+
+
+
+      <div class="banner_section layout_padding" style="max-width:100%">
+         <img class="Slides" src="images/banner-bg.png" style="width:100%">
+         <img class="Slides" src="images/banner-bg2.png" style="width:100%">
+         <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
+               <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <!-- <li data-target="#carouselExampleIndicators" data-slide-to="4"></li> -->
+               </ol>
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <!-- <div class="read_bt"><a href="#">JOIN NOW!</a></div> -->
+                        <div class="col-sm-12">
+                           <h1 class="banner_taital1"><b>Advocacy:</b>
+                           </h1>
+                           <p class="banner_text1">Ang <b><strong>Bisaya Gyud (BG) Partylist</b></strong> ay nagsusulong ng mga karapatan at kapakanan ng mga Bisaya. Pati na ang mga napabayaang sector ng mga katutubo, riders at mga mahihirap. Kami ay nakatuon sa paglaban para sa katarungan, kapayapaan, at upang itatag ang isang malinis na pamahalaan na tunay na naglilingkod sa mga tao. Ang aming boses sa Kongreso ay dedikado sa pagpapalakas ng bawat Pilipino, pag-aangat ng ating mga komunidad, at pagtitiyak na ang mga susunod na henerasyon ay makikinabang sa isang makatarungan, mapayapa at maunlad na lipunan.</p>
+                           <p class="banner_text1a"> Kami ay naniniwala na ang bawat Pilipino ay may karapatang magkaroon ng mas maginhawa at masayang buhay, at ito ang aming magiging pangunahing layunin sa paglilingkod.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="col-sm-12">
+                        <h1 class="banner_taital2">Core Values </h1>
+                        <p class="banner_text2">1. <strong><b>Katarungan</b></strong> – Pagtataguyod ng tunay na katarungan para sa bawat Pilipino.</p>
+                        <p class="banner_text2a">2. <strong><b>Kalayaan</b></strong> – Pagsusulong ng kalayaan sa ilalim ng tamang batas at moralidad. </p>
+                        <p class="banner_text2a">3.<strong><b> Seguridad, Kaunlaran at Kapayapaan</b></strong> – Pagpapalakas ng seguridad, kapayapaan at kaayusan ng bansa 
+                           tungo sa pagpapaunlad ekonomiya.    </p>
+                        <p class="banner_text2a"> 4. <strong><b>Serbisyo </b></strong> – Pagbibigay ng malasakit, mabilis at tamang serbisyo sa bawat 
+                                                          Pilipino at bayan. </p>
+                        <p class="banner_text2a"> 5. <strong><b>RoC n RoL </b></strong> – Ipamuhay ng bawat Kristiyanong Makabayan ang Regime of Christ 
+                                                          and Rule of Law(RoC n’ RoL), igalang ang paniwala ng ibang relihiyon,
+                                                         at ipatupad ang tamang moralidad ayon sa prinsipyo 
+                                                          ng “Isang Diyos, Isang Lahi, Isang Bansa.” </p>
+                        
+                        <!-- <div class="read_bt"><a href="#">JOIN NOW!</a></div> -->
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="col-sm-12">
+                        <h1 class="banner_taital">Vision</h1>
+                        <p class="banner_text">Isang Bansa na mapayapa, maunlad at kung saan ang karapatan ng bawat Pilipino ay ganap na iginagalang. Isang bayan na ang mamamayan ay may pantay na oportunidad sa pag-unlad, seguridad, murang pagkain, sariling lupa at bahay, trabaho at karapatan upang makamit ang katarungan at tunay kalayaan.
+                        </p>
+                        <!-- <div class="read_bt"><a href="#">JOIN NOW!</a></div> -->
+                     </div>
+                  </div>
+                  <div class="carousel-item " >
+                     <div class="col-sm-12">
+                        <h1 class="banner_taital">Mission</h1>
+                        <p class="banner_text">Bantay at Gabay ng Bayan sa pagsulong ng tunay na katarungan, kalayaan, seguridad, 
+                           kapayapaan at kaunlaran. Ang layunin namin ay magsulong ng mga programang magbibigay ng mas 
+                           magandang buhay sa mga Bisaya, katutubo, riders, ministro, sundalo at lahat ng Pilipino sa pamamagitan ng makatarungan, 
+                           maayos, at malinis na pamamahala.</p>
+                       <!-- <div class="read_bt"><a href="#">Read More</a></div>-->
+                     </div>
+                  </div> 
+               </div>
+            </div>
+         </div>
+         <div class="donation_box">
+            <h6 class="donation_taital">BG PARTYLIST </h6>
+            <h6 class="weblink">www.bgpartylist.com</h6>
+            <form action="/user/register">
+               
+            <div class="mail_box">
+               <input type="" class="mail_text" placeholder="Your Name" name="Your Name">
+               <input type="" class="mail_text" placeholder="Email" name="Email">
+               <input type="" class="mail_text" placeholder="Phone" name="Phone">
+            </div>
+            <div class="send_bt"><button class="btn btn-lg btn-danger rounded-3" type="submit">JOIN NOW</button></div>
+         </div>
+         <div class="fundraise_section">
+            <div class="fundraise_section_main">
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="box_main">
+                        <div class="icon_1"><img src="images/icon-1.png"></div>
+                        <h4 class="volunteer_text">CAMPAIGN</h4>
+                        <p class="lorem_text">Easily access and download BG Partylist campaign materials to support our cause. Use these to help spread our vision and advocate for the change we need.</p>
+                        
+                        
+
+
+
+<!--the forward slash was used instead of .html in href-->                        
+                        <div class="join_bt"><a  href="/campaign">Download!</a></div>
+<!--end the forward slash was used instead of .html in href-->
+         
+         <!-- NOTE: In the VS CODE - the campaignmaterial.html is the href of the DOWNLOAD button, 
+                    In the uploaded website: only "campaign" was used as the href of the download button.-->
+                    
+                    
+                  
+                     </div>
+                  </div>
+
+
+
+
+
+                  
+<!--Updated profile video 26/11/2024-->
+                  <div class="col-lg-4">
+                     <div class="box_main active">
+                        <div class="icon_1"><img src="images/icon-3.png"></div>
+                        <h4 class="volunteer_text">BG PROFILE</h4>
+                        <p class="lorem_text">Learn more about what BG Partylist stands for! Watch our Vision, Mission, Advocacy, and Platform to understand our commitment to bringing positive change.</p>
+                        <div class="join_bt"><a href="videos/BG-PL Presentation for social media.mp4">WATCH</a></div>
+                     </div>
+                  </div>
+<!--End Updated profile video 26/11/2024-->     
+
+
+
+
+                  <div class="col-lg-4">
+                     <div class="box_main">
+                        <div class="icon_1"><img src="images/icon-4.png"></div>
+                     <!--  <h4 class="volunteer_text">CONTRIBUTE</h4> -->
+                           <h4 class="volunteer_text">TUTORIALS</h4>
+                        <p class="lorem_text">Need help registering? Watch our step-by-step tutorials designed to guide you through the registration process with ease. Registering has never been simpler.</p>
+
+
+
+<!--the forward slash was used instead of .html in href-->
+                        <div class="join_bt"><a href="/tutorial">WATCH</a></div>
+<!--end the forward slash was used instead of .html in href-->
+
+
+
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <script>
+         var myIndex = 0;
+         carousel();
+         
+         function carousel() {
+           var i;
+           var x = document.getElementsByClassName("Slides");
+           for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none  ";  
+           }
+           myIndex++;
+           if (myIndex > x.length) {myIndex = 1}    
+           x[myIndex-1].style.display = "block";  
+           setTimeout(carousel,6000); // Change image every 6 seconds
+         }
+         </script>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-8">
+                  <h2 class="about_taital">BG Partylist</h2>
+                  <p class="about_text">The BG Partylist, referred to as Bantay at Gabay, is a collective of civilian volunteers who have united as a movement to champion the Filipino Code of Conduct, encapsulated by the principles of RoC n RoL (Regime of Christ and Rule of Law). The Defenders’ overarching goal is to advocate for transformative reforms in both society and the government, seeking to bring about positive change and uphold ethical standards. <br> <br> The Regime of Christ and Rule of Law or RoC n’RoL means to live under the Regime of Christ, specifically the Regime of truth, justice, freedom, love, equality and peace and abide by the Rule of Law. It is the Defenders’ core philosophy, ideology and way of life.
+                  </p>
+                  <h3 class="about_taital">Key Leaders:</h3>
+                  <p class="about_text1">1. Greco B. Belgica – President BGPL; First Nominee <br>
+                     2. Gen. Carlos Quita – Secretary General BGPL; Second Nominee <br>
+               <div class="readmore_bt"><a href="#">Read more</a></div>
+            </div>
+               <div class="col-sm-4">
+                  <div class="about_img" ><img src="images/about-img.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- mission section start -->
+      <div class="mission_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="mission_taital">Plataporma </h1>
+                  <p class="mission_text">Ayon Sa “Isang Diyos, Isang Lahi, Isang Bansa" </p>
+               </div>
+            </div>
+         </div>
+         <div class="mission_section_2">
+            <div class="row">
+               <div class="offset-md-2"></div>
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service7.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text">Itaas ang antas at seguridad ng pamumuhay at kapakanan ng mga Bisaya.</h4>
+                       <!-- <p class="alteration_text"> Tiyakin ang kinabukasan ng ating mga anak 
+                           at pangalagaan ang mga nakatatanda. </p> -->
+
+                           <div class="btn_main">
+                              <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service8.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text"> Palakasin ang sektor ng agrikultura at aquaculture </h4>
+                           <p class="alteration_text">upang masiguro ang pagkain ng mga Pilipino at maiangat ang antas ng pamumuhay ng mga magsasaka at mga mangingisda.</p>                             
+                           <div class="btn_main">
+                              <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="mission_section_2">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service9.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text">Patatagin ang ekonomiya at seguridad ng bansa </h4>
+                           <p class="alteration_text">sa pamamagitan ng paglunsad ng mga programa at proyekto na ayon sa kunsultasyon sa mamamayan at pinag-aralan ng mga dalubhasa. </p>
+                           
+                           <div class="btn_main">
+                              <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service6.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                         <h4 class="some_text">Ibaba ang presyo ng bilihin, magbigay ng trabaho, at asikasuhin ang kalusugan at kapakanan ng bawat Pilipino.  </h4>
+                     <!--<p class="alteration_text"> Magpatupad ng mga programang magbaba ng presyo ng bilihin at mag-aasikaso sa kalusugan. </p> -->
+                           
+                           <div class="btn_main">
+                              <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offset-md-2"></div>
+            </div>
+         </div>
+         <div class="mission_section_2">
+            <div class="row">
+               <div class="offset-md-2"></div>
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service10.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                     <div class="text">
+                        <h4 class="some_text">Alisin ang amelyar (tax) sa pribadong lupa</h4>
+                        <p class="alteration_text">at bigyan ng sariling lupa ang bawat pamilyang Pilipino.   </p>
+
+                           
+                           <div class="btn_main">
+                              <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="container_main">
+                     <img src="images/service11.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text">Ipatupad ang 10% flat rate tax </h4>
+                           <p class="alteration_text">at gumawa ng sistema upang mahikayat and lokal at dayuhan na magnegosyo sa bansa.  </p>
+      
+                           <div class="btn_main">
+                             
+                              <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mission_section_2">
+         <div class="row">
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service2.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                     <div class="text">
+                        <h4 class="some_text">Palakasin ang justice system,</h4>
+                        <p class="alteration_text">labanan ang red tape, kurapsyon at katiwalian sa gobyerno, at sugpuin ang kriminalidad, terorismo at bawal na droga. </p>
+
+                        <div class="btn_main">
+                           <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                           <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service1.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                     <div class="text">
+                        <h4 class="some_text">Suportahan ang Constitutional Convention</h4>
+                           <p class="alteration_text">upang itatag ang federal government para sa maayos at malinis na pamahalaan. </p>
+
+                        <div class="btn_main">
+                           <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                           <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="offset-md-2"></div>
+         </div>
+      </div>
+      <div class="mission_section_2">
+         <div class="row">
+            <div class="offset-md-2"></div>
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service5.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text">Ipamuhay ang RoC n RoL <br>(Regime of Christ <br>and Rule of Law), </h4>
+                           <p class="alteration_text">irespeto ang paniniwala ng ibang relihiyon, at ipatupad ang tamang moralidad ayon sa prinsipyo ng “Isang Diyos, Isang Lahi, Isang Bansa.” </p>
+
+                        <div class="btn_main">
+                           <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                           <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service4.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                     <div class="text">
+                        <h4 class="some_text">Pangalagaan ang kapakanan ng mga katutubo</h4>
+                        <p class="alteration_text">ayon sa Indigenous People’s Rights Act (RA No. 8371) at kanilang “customary law,” at mga kapwa Pilipino na napabayaan ng gobyerno, biktima ng pang-aabuso at kawalan ng katarungan. </p>
+
+                        <div class="btn_main">
+                         
+                           <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="mission_section_2">
+      <div class="row">
+         <div class="col-md-5">
+            <div class="container_main">
+               <img src="images/service12.jpg" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text">
+                     <h4 class="some_text">Pangalagaan ang mga karapatan ng kababaihang Pilipino,  </h4>
+                     <p class="alteration_text">lalo na ang mga nasa marginalized na sektor, alinsunod sa Magna Carta of Women (RA 9710). </p>
+
+                     <div class="btn_main">
+                        <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                        <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-5">
+            <div class="container_main">
+               <img src="images/service3.png" alt="Avatar" class="image">
+               <div class="overlay">
+                  <div class="text">
+                     <h4 class="some_text1">Ibalik ang kapangyarihan ng mamamayan, itatag ang people's congress at citizen’s audit at sistema ng transparency at accountability </h4>
+                     <p class="alteration_text1">upang suriin ang pagganap ng mga mambabatas at mga public officials pati na rin ang paggastos ng kani-kanilang budget at kasuhan ang mga tiwaling opisyales ng gobyerno.</p>
+                     
+                     <div class="btn_main">
+                        <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                        <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="offset-md-2"></div>
+      </div>
+   </div>
+   <div class="mission_section_2">
+         <div class="row">
+            <div class="offset-md-2"></div>
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service13.png" alt="Avatar" class="image">
+                     <div class="overlay">
+                        <div class="text">
+                           <h4 class="some_text">Magpanukala ng batas para sa Magna Carta for Motorcycle Riders</h4>
+                        <p class="alteration_text">at isulong ang kanilang kapakanan at karapatan. </p>
+
+                        <div class="btn_main">
+                           <!-- <div class="donate_bt"><a href="#">Read More</a></div> -->
+                           <div class="donate_bt"><a href="#">JOIN NOW</a></div>
+                        </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-5">
+               <div class="container_main">
+                  <img src="images/service14.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                     <div class="text">
+                        <h4 class="some_text">Magpanukala ng batas para sa Magna Carta for Construstion Workers</h4>
+                        <p class="alteration_text">at isulong ang kanilang kapakanan at karapatan. </p>
+
+                        <div class="btn_main">
+                           <div class="donate_bt"><a href="#">Read More</a></div>
+                           <div class="donate_bt"><a href="#">Donate Now</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      <!-- mission section end -->
+      <!-- news section start -->
+      <div class="news_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="news_taital">NEWS</h1>
+                  <!-- <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p> -->
+               </div>
+            </div>
+            <div class="news_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="news_img"><img src="images/news-img.png" class="news_img"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="give_taital">From Petitioners to Protectors:</h1>
+                     <h4 class="give_taital1" >The Defenders of Justice and the Battle Against Political Pork Barrel </h4>
+                     <p class="ipsum_text" >The BG Partylist originated from the formal establishment of the "Truth and Justice Coalition (TJC)" on November 19, 2014, marking the first anniversary of the Supreme Court's Belgica ruling.
+                     </p>
+                     <!-- <h5 class="raised_text">Raised: $60,010     <span class="goal_text">Goal: $70,000</span></h5> -->
+                     <div class="donate_btn_main">
+                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                        <!-- <div class="readmore_btn_1"><a href="donate.html">Donate Now</a></div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="news_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="news_img"><img src="images/news-img2.png" class="news_img"></div>
+                  </div>
+                  <div class="col-md-6">
+                     <h1 class="give_taital">BG Partylist Rally Nation for Interfaith Prayer Gathering</h1>
+                     <p class="ipsum_text">From this point, we are launching a movement to gather together people who believe in Biblical supplications, prayers, intercessions and giving of thanks, founded on 1 Tim 2:1-4. We are calling this Katipan sa Panalangin Para sa Bansang Pilipinas, Pamahalaan, Mamamayan.
+                     </p>
+                     <!-- <h5 class="raised_text">Raised: $60,010     <span class="goal_text">Goal: $70,000</span></h5> -->
+                     <div class="donate_btn_main">
+                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                        <!-- <div class="readmore_btn_1"><a href="donate.html">Donate Now</a></div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- news section end -->
+      <!-- events section start -->
+      <!-- <div class="events_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="news_taital">FEATURED CAUSE</h1>
+                  <p class="news_text">going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+               </div>
+            </div>
+            <div class="events_section_2">
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="img_7"><img src="images/img-7.png" class="img_7"></div>
+                     <div class="date_bt">
+                        <div class="date_text active"><a href="#">01</a></div>
+                        <div class="date_text"><a href="#">FEB</a></div>
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <h1 class="give_taital_1">The Internet tend to repeat</h1>
+                     <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                     <h5 class="raised_text_1">Raised: $60,010 <span class="goal_text">Goal: $70,000</span></h5>
+                     <div class="donate_btn_main">
+                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                        <div class="readmore_btn_1"><a href="donate.html">Donate Now</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="events_section_2">
+               <div class="row">
+                  <div class="col-md-5">
+                     <div class="img_7"><img src="images/img-8.png" class="img_7"></div>
+                     <div class="date_bt">
+                        <div class="date_text active"><a href="#">10</a></div>
+                        <div class="date_text"><a href="#">FEB</a></div>
+                     </div>
+                  </div>
+                  <div class="col-md-7">
+                     <h1 class="give_taital_1">The Internet tend to repeat</h1>
+                     <p class="ipsum_text_1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literatureContrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+                     <h5 class="raised_text_1">Raised: $60,010     <span class="goal_text">Goal: $70,000</span></h5>
+                     <div class="donate_btn_main">
+                        <div class="readmore_btn"><a href="#">Read More</a></div>
+                        <div class="readmore_btn_1"><a href="donate.html">Donate Now</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> -->
+      <!-- events section end -->
+      <!-- donate section start -->
+      <div class="donate_section layout_padding">
+         <div class="container">
+            <h1 class="donate_taital">What People say</h1>
+            <div class="donate_taital_main">
+               <div id="main_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="donate_left">
+                           <!-- <div class="client_img"><img src="images/client-img.png"></div> -->
+                        </div>
+                        <div class="donate_right">
+                           <h3 class="client_name_text">Jayvee  Reyes</h3>
+                           <p class="dummy_text">I am so proud to be part of  BG Partylist!  The impact we're making  on the  community, especially  on values formation is truly heartwarming. <br>Together, we're creating positive change and giving hope to those in need.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="donate_left">
+                           <!-- <div class="client_img"><img src="images/client-img.png"></div> -->
+                        </div>
+                        <div class="donate_right">
+                           <h3 class="client_name_text">Danny Buenaflor</h3>
+                           <p class="dummy_text">Bago lang ako sa BG Partylist at nakita ko na Christian values and principles and nangingibabaw. Boto ako sa adhikain ng grupo na tumulong sa repormasyon ng lipunan at pamahalaan.<br>Sobra na ang cancer ng ating lipunan. Dapat tayong magtulungan.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="donate_left">
+                           <!-- <div class="client_img"><img src="images/client-img.png"></div> -->
+                        </div>
+                        <div class="donate_right">
+                           <h3 class="client_name_text">Edwin Samonte</h3>
+                           <p class="dummy_text">Bilang isang Pilipino, nakakataba ng puso na may mga  nagtutulungan  gaya ng mga miyembro ng Defenders na  naglilingkod sa  Diyos at kapakanan ng bayan.<br>May pag-asa pa ang Pilipinas! </p>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="donate_left">
+                           <!-- <div class="client_img"><img src="images/client-img.png"></div> -->
+                        </div>
+                        <div class="donate_right">
+                           <h3 class="client_name_text">Emil Espinosa</h3>
+                           <p class="dummy_text">As an observer, it's heartening to see BG Partylist tackling societal issues, especially its dedicated efforts against government corruption. The members' commitment to transparency and accountability serves as a beacon of hope for positive change in our country. </p>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+                  <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- donate section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6 col-md-6 col-lg-3">
+                  <div class="footer_logo"><img src="images/logo.png"></div>
+               </div>
+               <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h4 class="footer_taital">NAVIGATION</h4>
+                  <div class="footer_menu_main">
+                     <div class="footer_menu_left">
+                        <div class="footer_menu">
+                           <ul>
+
+
+
+
+
+<!--In the hyperlink reference: the forward slash was used instead of .html-->
+                              <li><a href="/">Home</a></li>
+                              <li><a href="/about">About</a></li>
+                              <li><a href="/news">News</a></li>
+                              <li><a href="/contact">Contact Us</a></li> 
+                              <!--<li><a href="mission.html">Our Mission</a></li> -->
+                              <li><a href="/campaignmaterial">Campaign Material</a></li>
+<!--End In the hyperlink reference: the forward slash was used instead of .html-->
+
+         <!-- NOTE: In the VS CODE - the campaignmaterial.html is the href of the DOWNLOAD button, 
+                    In the uploaded website: only "campaign" was used as the href of the download button.-->   
+
+
+
+
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-6 col-lg-3">
+                  <h4 class="footer_taital">NEWS</h4>
+                  <!-- <p class="footer_text">Generators on the Internet</p>
+                  <p class="footer_text">Tend to repeat predefined</p>
+                  <p class="footer_text">Chunks as necessary, making</p> -->
+               </div>
+               <div class="col-sm-6 col-md-6 col-lg-3">
+
+
+
+
+
+<!--The footer text arranged-->
+                <h4 class="footer_taital">address</h4>
+                <p class="footer_text">El Mercedes Events Place,<br> 1372 Mercedes Ave, <br>San Miguel, Pasig City,<br> Metro Manila Philippines</p>
+                <p class="footer_text">+639850461364</p>
+                <p class="footer_text">bgpartylist@gmail.com</p>
+                <p class="footer_text">bgpartylist.com</p>
+<!--end The footer text arranged-->
+
+
+
+
+
+               </div>
+            </div>
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-3">
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                           <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-sm-8 col-md-8 col-lg-9">
+                     <input type="text" class="address_text" placeholder="Enter your Email" name="text">
+                     <button type="button" class="get_bt">SUBSCRIBE</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2024 All Rights Reserved. Powered by <a href=""> Powered by Jetzsolutions & Exodous I.T. Solutions</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+   </body>
+</html>
+
